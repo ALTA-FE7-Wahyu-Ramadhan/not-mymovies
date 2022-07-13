@@ -1,12 +1,17 @@
 import React from "react";
-import batman1 from "./img/batmanBegins.jpg";
-import batman2 from "./img/batmanSuperman.jpg";
-import batman3 from "./img/batmanNew.jpg";
-import "./css/Hero1.css";
+import batman1 from "../img/batmanBegins.jpg";
+import batman2 from "../img/batmanSuperman.jpg";
+import batman3 from "../img/batmanNew.jpg";
+import "../css/Hero1.css";
+import Header from "../components/Header";
+
 
 class Hero1 extends React.Component {
+componentDidMount(){console.log('Hero1')}
   render() {
     return (
+      <>
+        <Header />
       <div className="pembatas">
         <div class="kontainer">
           <div class="cards">
@@ -43,6 +48,7 @@ class Hero1 extends React.Component {
           </div>
         </div>
       </div>
+      </>
     );
   }
 }
